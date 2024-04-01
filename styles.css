@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
 }
 
 .container {
@@ -9,15 +10,23 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #007bff; /* Blue button */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 input[type="text"] {
@@ -27,6 +36,10 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
-button:hover {
-    background-color: #0056b3;
+/* Center all content vertically and horizontally */
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
