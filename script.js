@@ -1,32 +1,21 @@
-function startProcess() {
-    // Simulate loading screen
-    showLoadingScreen();
+function takeMeasurement() {
+  // Simulate loading screen
+  document.body.innerHTML = "<div class='loading'>Loading...</div>";
 
-    // Simulate detecting metrics
-    setTimeout(showMetrics, 2000);
+  // Simulate measuring mass and volume
+  const mass = Math.floor(Math.random() * 100) + 1; // Random mass between 1 and 100
+  const volume = Math.floor(Math.random() * 100) + 1; // Random volume between 1 and 100
+
+  // Redirect to measurement page after a short delay
+  setTimeout(function() {
+    window.location.href = "measurement.html";
+  }, 2000); // 2 seconds delay
 }
 
-function showLoadingScreen() {
-    // Display loading screen
-    document.body.innerHTML = `
-        <div class="loading">
-            <h2>Loading...</h2>
-        </div>
-    `;
-}
+function calculateMetrics() {
+  // Simulate calculating metrics
+  const plasticType = document.getElementById("plasticType").value;
 
-function showMetrics() {
-    // Simulate generating random metrics
-    const mass = Math.floor(Math.random() * 100) + 1;
-    const volume = Math.floor(Math.random() * 100) + 1;
-
-    // Display metrics
-    document.body.innerHTML = `
-        <div class="container">
-            <h1>Plastic Waste Metrics</h1>
-            <p>Mass: ${mass} g</p>
-            <p>Volume: ${volume} cm<sup>3</sup></p>
-            <a href="plasticType.html">Enter Plastic Type</a>
-        </div>
-    `;
+  // Redirect to products page
+  window.location.href = "products.html";
 }
