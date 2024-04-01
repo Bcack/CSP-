@@ -5,9 +5,10 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
 
 button {
@@ -15,19 +16,17 @@ button {
     background-color: #007bff;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.loading {
-    text-align: center;
-    margin-top: 50px;
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #0056b3;
 }
