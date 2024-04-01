@@ -3,97 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plastic Waste Disposal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        #result {
-            margin-top: 20px;
-        }
-        #products {
-            display: none;
-        }
-        #product-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        #product-list li {
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Plastic Waste Measurement</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Plastic Waste Disposal</h1>
-        <div id="input-form">
-            <input type="text" id="plastic-type" placeholder="Enter type of plastic waste">
-            <button onclick="calculateMetrics()">Submit</button>
-        </div>
-        <div id="result"></div>
-        <div id="products">
-            <h2>Products Made Using the Following Metrics:</h2>
-            <ul id="product-list">
-                <!-- Product images will be dynamically added here -->
-            </ul>
-        </div>
+        <h1>Plastic Waste Measurement</h1>
+        <button onclick="startProcess()">Start</button>
     </div>
 
-    <script>
-        function calculateMetrics() {
-            var plasticType = document.getElementById('plastic-type').value;
-            var mass = Math.floor(Math.random() * 100) + 1; // Generate random mass
-            var volume = Math.floor(Math.random() * 100) + 1; // Generate random volume
-
-            var resultDiv = document.getElementById('result');
-            resultDiv.innerHTML = `<p>Plastic type: ${plasticType}</p>
-                                   <p>Mass: ${mass} g</p>
-                                   <p>Volume: ${volume} cm<sup>3</sup></p>`;
-
-            // Display products
-            var productsDiv = document.getElementById('products');
-            productsDiv.style.display = 'block';
-
-            var productList = document.getElementById('product-list');
-            productList.innerHTML = ''; // Clear previous products
-
-            // Here you can dynamically add products based on plastic type and metrics
-            // For simplicity, let's add some dummy products
-            var products = [
-                'product1.jpg',
-                'product2.jpg',
-                'product3.jpg'
-            ];
-
-            products.forEach(function(product) {
-                var listItem = document.createElement('li');
-                var img = document.createElement('img');
-                img.src = product;
-                img.alt = '3D Printed Product';
-                listItem.appendChild(img);
-                productList.appendChild(listItem);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
