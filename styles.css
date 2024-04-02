@@ -5,16 +5,13 @@ body {
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
 }
 
 button {
-    padding: 20px 40px;
-    font-size: 24px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -24,11 +21,9 @@ button {
 .loading {
     text-align: center;
     margin-top: 50px;
-    font-size: 24px;
 }
 
 a {
-    font-size: 24px;
     color: #007bff;
     text-decoration: none;
 }
@@ -37,12 +32,3 @@ a:hover {
     text-decoration: underline;
 }
 
-input[type="text"] {
-    padding: 20px;
-    font-size: 24px;
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-}
