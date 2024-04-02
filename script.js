@@ -1,3 +1,8 @@
+function startProcess() {
+    // Simulate loading screen
+    showLoadingScreen();
+}
+
 function showLoadingScreen() {
     // Display loading screen
     document.body.innerHTML = `
