@@ -9,9 +9,10 @@ function showLoadingScreen() {
         <div class="container">
             <div class="loading">
                 <h2>Loading...</h2>
+                showMetrics();
             </div>
         </div>
-        showMetrics();
+        
     `;
 }
 
