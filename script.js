@@ -1,23 +1,7 @@
-function startProcess() {
-    // Simulate loading screen
-    showLoadingScreen();
-
-    // Simulate detecting metrics
-    setTimeout(showMetrics, 2000);
-}
-
-function showLoadingScreen() {
-    // Display loading screen
-    document.body.innerHTML = `
-        <div class="loading">
-            <h2>Loading...</h2>
-        </div>
-    `;
-}
-
 function showMetrics() {
     // Simulate generating random metrics
-    const mass = Math.floor(Math.random() * 100) + 1;
+    const minMass = 20;
+    const mass = Math.floor(Math.random() * (100 - minMass + 1)) + minMass; // Generate random mass between 20 and 100 grams
     const volume = Math.floor(Math.random() * 100) + 1;
 
     // Display metrics
