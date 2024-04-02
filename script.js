@@ -9,7 +9,7 @@ function showLoadingScreen() {
         <div class="container">
             <div class="loading">
                 <h2>Loading...</h2>
-                showMetrics();
+
             </div>
         </div>
         
@@ -31,5 +31,4 @@ function showMetrics() {
             <p>Volume: ${volume} cm<sup>3</sup></p>
             <a href="plasticType.html">Enter Plastic Type</a>
         </div>
-    `;
 }
