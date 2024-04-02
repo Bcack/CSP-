@@ -12,8 +12,7 @@ function showLoadingScreen() {
 
             </div>
         </div>
-        
-    `;
+        showMetrics();
 }
 
 
