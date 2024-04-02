@@ -1,3 +1,15 @@
+function showLoadingScreen() {
+    // Display loading screen
+    document.body.innerHTML = `
+        <div class="container">
+            <div class="loading">
+                <h2>Loading...</h2>
+            </div>
+        </div>
+    `;
+}
+
+
 function showMetrics() {
     // Simulate generating random metrics
     const minMass = 20;
